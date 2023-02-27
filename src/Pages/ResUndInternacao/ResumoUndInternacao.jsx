@@ -25,16 +25,16 @@ function ResumoUndInt() {
     
     return(
       <tr key={index}>
-        <td>{val[0]}</td>
-        <td>{val[1]}</td>
-        <td>{val[2]}</td>
-        <td>{val[3]}</td>
-        <td>{val[4]}</td>
-        <td>{val[5]}</td>
-        <td>{Math.round(val[6])}</td>
-        <td>{Math.round(val[7])}</td>
-        <td>{val[8]}</td>
-        <td>{val[9]}</td>
+        <td>{val['DS_UNID_INT']}</td>
+        <td>{val['PAC00']}</td>
+        <td>{val['ENT']}</td>
+        <td>{val['ALTAS']}</td>
+        <td>{val['OBITOS']}</td>
+        <td>{val['SAI_OBITOS48']}</td>
+        <td>{Math.round(val['PER_OCUP'])}</td>
+        <td>{Math.round(val['TX_MORT'])}</td>
+        <td>{val['TX_MORT_INST']}</td>
+        <td>{val['PAC_DIA']}</td>
       </tr>
     )
   }

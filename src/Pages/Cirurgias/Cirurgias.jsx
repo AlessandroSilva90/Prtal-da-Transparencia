@@ -42,8 +42,8 @@ function Cirurgias() {
     
     return(
       <tr key={index}>
-        <td>{val[0]}</td>
-        <td>{val[1]}</td>
+        <td>{val['TIPO']}</td>
+        <td>{val['QTD']}</td>
         {/* <td>{val[2]}</td>
         <td>{val[3]}</td>
         <td>{val[4]}</td> */}
@@ -59,9 +59,9 @@ function Cirurgias() {
     
     return(
       <tr key={index}>
-        <td>{val[0]}</td>
-        <td>{val[1]}</td>
-        <td>{val[2]}</td>
+        <td>{val['UF']}</td>
+        <td>{val['NM_CIDADE']}</td>
+        <td>{val['QTD']}</td>
         {/* <td>{val[3]}</td>
         <td>{val[4]}</td> */}
         {/* <td>{val[5]}</td>
@@ -76,8 +76,8 @@ function Cirurgias() {
     
     return(
       <tr key={index}>
-        <td>{val[0]}</td>
-        <td>{val[1]}</td>
+        <td>{val['SEXO']}</td>
+        <td>{val['QTD']}</td>
         {/* <td>{val[2]}</td>
         <td>{val[3]}</td>
         <td>{val[4]}</td> */}
@@ -93,8 +93,8 @@ function Cirurgias() {
     
     return(
       <tr key={index}>
-        <td>{val[0]}</td>
-        <td>{val[1]}</td>
+        <td>{val['FAIXA']}</td>
+        <td>{val['QTD']}</td>
         {/* <td>{val[2]}</td>
         <td>{val[3]}</td>
         <td>{val[4]}</td>
@@ -159,13 +159,9 @@ function Cirurgias() {
             </tr>
             
           </thead>
-          
             {/* {cidade.map(returnCidade )} */}
             <Paginator data={cidade}/>
             {/* {cidade.map(returnCidade)} */}
-
-          
-        
         </Table>
       </div>
 
