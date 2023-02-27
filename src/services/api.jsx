@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: "http://10.10.10.5/santacasa/portal/"
+    baseURL: "http://201.20.72.194:9097/santacasa/portal/"
 })
 
 export const getDadosPorCidade = async (dt_inicio,dt_fim) =>{
